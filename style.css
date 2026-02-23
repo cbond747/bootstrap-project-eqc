@@ -1,21 +1,21 @@
 /* Custom fonts using @font-face */
     @font-face {
         font-family: 'Boris-Black-Bloxx';
-        src: url('/media/Fonts/boris_black_bloxx/BorisBlackBloxx.ttf') format('truetype');
+        src: url('media/Fonts/boris_black_bloxx/BorisBlackBloxx.ttf') format('truetype');
     }
 
     @font-face {
         font-family: 'Lemon-Milk';
-        src: url('/media/Fonts/lemon_milk/LemonMilklight.otf') format('truetype');
+        src: url('media/Fonts/lemon_milk/LemonMilklight.otf') format('truetype');
     }
 
     @font-face {
         font-family: 'Lemon-Milk2';
-        src: url('/media/Fonts/lemon_milk/LemonMilkbolditalic.otf') format('truetype');
+        src: url('media/Fonts/lemon_milk/LemonMilkbolditalic.otf') format('truetype');
     }
     @font-face {
         font-family: 'Schmutz';
-        src: url('/media/Fonts/SchmutzICG_Cleaned/SchmutzICG_Cleaned_Regular/SchmutzICG_Cleaned_Regular.otf') format('truetype');
+        src: url('media/Fonts/SchmutzICG_Cleaned/SchmutzICG_Cleaned_Regular/SchmutzICG_Cleaned_Regular.otf') format('truetype');
     }
     
 
@@ -139,7 +139,7 @@ footer {
 
 /*--------------PROMOS styling--------------*/
 #promo-section {
-    background-image: url('/media/images/augustine-wong-li0iC0rjvvg-unsplash.jpg');
+    background-image: url('media/images/augustine-wong-li0iC0rjvvg-unsplash.jpg');
     background-size: cover;
     background-position: center;
     padding: 60px 0;
@@ -182,7 +182,7 @@ footer {
 
 /*------------ABOUT Page Styles-------------*/
 #about-us {
-    background-image: url('/media/images/chris-appano-mb_nVAy2a-8-unsplash.jpg');
+    background-image: url('media/images/chris-appano-mb_nVAy2a-8-unsplash.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -273,7 +273,7 @@ footer {
 
 /*------------ERROR Page Styles-------------*/
 #error-section {
-    background-image: url('/media/images/chris-appano-mb_nVAy2a-8-unsplash.jpg');
+    background-image: url('media/images/chris-appano-mb_nVAy2a-8-unsplash.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
