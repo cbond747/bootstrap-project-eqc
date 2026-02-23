@@ -1,0 +1,307 @@
+/* Custom fonts using @font-face */
+    @font-face {
+        font-family: 'Boris-Black-Bloxx';
+        src: url('/media/Fonts/boris_black_bloxx/BorisBlackBloxx.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Lemon-Milk';
+        src: url('/media/Fonts/lemon_milk/LemonMilklight.otf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Lemon-Milk2';
+        src: url('/media/Fonts/lemon_milk/LemonMilkbolditalic.otf') format('truetype');
+    }
+    @font-face {
+        font-family: 'Schmutz';
+        src: url('/media/Fonts/SchmutzICG_Cleaned/SchmutzICG_Cleaned_Regular/SchmutzICG_Cleaned_Regular.otf') format('truetype');
+    }
+    
+
+/* CSS variables for theme colors and fonts */
+:root {
+    --theme-color: #FF6633;
+    --light-color: #FF9966;
+    --light-grey: rgba(255, 255, 255, 0.637);
+
+    --font1: Boris-Black-Bloxx, sans-serif;
+    --font2a: Lemon-Milk, sans-serif;
+    --font2b: Lemon-Milk2, sans-serif;
+    --font3: 'Roboto Flex', sans-serif;
+    --font4: 'Playfair Display', serif;
+    --font5: 'Nunito Sans', sans-serif;
+    --font6: 'Bebas Neue', cursive;
+    --font7: 'Schmutz', sans-serif;
+}
+
+/*Body styling*/
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/*--------------NavBar styling--------------*/
+.navbar {
+    background-color: #FF6633;
+    /*justify-content: center;*/
+    
+}
+
+.nav-link {
+    font-family: var(--font1);
+    color: white;
+}
+
+.nav-link:hover {
+    
+    transform: scale(1.05);
+}
+
+.dropdown-menu {
+    background-color: #FF6633;
+}
+
+.dropdown-item {
+    color: white;
+    font-family: var(--font1);
+}
+
+.dropdown-item:hover {
+    color: #FF9966;
+}
+
+/*--------------Footer styling--------------*/
+footer {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--theme-color);
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    fill: white;
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+#copyright {
+    color: white;
+    font-family: var(--font3), sans-serif;
+    font-size: medium;
+    font-weight: bold;
+}
+
+/*--------------Carousel styling--------------*/
+.carousel-item {
+    
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.carousel-caption h1{
+    font-family: var(--font1);
+    font-size: 2em;
+}
+#carousel-img-1 img, #carousel-img-2 img{
+    background-color: antiquewhite;
+    /*opacity: 0.7;*/
+}
+
+#carousel-img-1 h1, #carousel-img-2 h1 {
+    
+    color: var(--theme-color);
+}
+
+.carousel-caption {
+    position: absolute;
+    color: antiquewhite;
+    
+}
+
+.overlay-image{
+    position: absolute;
+    background-size: cover;
+}
+
+/*--------------PROMOS styling--------------*/
+#promo-section {
+    background-image: url('/media/images/augustine-wong-li0iC0rjvvg-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+}
+.promo-header {
+    font-family: var(--font1);
+    color: var(--theme-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.promo-description {
+    font-family: var(--font3);
+    font-size: 1.5em;
+    color: black;
+}
+
+.promo-card {
+   
+    transition: all 0.3s ease;
+}
+.promo-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.promo-card .card-body {
+    background-color: var(--light-color);
+}
+
+.promo-card .card-title {
+    font-family: var(--font1);
+    color: white;
+}
+
+.promo-card .card-text {
+    font-family: var(--font3);
+    color: white;
+}
+
+/*------------ABOUT Page Styles-------------*/
+#about-us {
+    background-image: url('/media/images/chris-appano-mb_nVAy2a-8-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.about-header1 {
+    font-family: var(--font1);
+    color: white;
+}
+
+.about-subheader {
+    font-family: var(--font1);
+    color: var(--light-grey);
+}
+
+.about-description {
+    font-family: var(--font5);
+    color: var(--light-grey);
+    font-size: 1.5em;
+}
+
+.partner-container {
+    transition: all 0.3s ease;
+}
+
+.partner-container:hover {
+    transform: scale(1.05);
+}
+.partner-link {
+    text-decoration: none;
+}    
+.partner-logo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    height: 180px
+
+}
+
+.partner-name {
+    font-family: var(--font7);
+    text-align: center;
+    font-size: 3.5em;
+    position: absolute;
+        top: 60%;
+}
+
+
+
+/*------------CONTACT Styles-------------*/
+
+    /* Contact Form */
+#contact-section {
+    background-color: var(--theme-color);
+    width: 100%;
+
+}
+
+.contact-header {
+    font-family: var(--font1);
+    color: white;
+}
+
+.contact-header-2 {
+    font-family: var(--font1);
+    color: var(--theme-color);
+}
+
+.contact-form label {
+    font-family: var(--font1);
+    color: white;
+}
+
+
+    /* Map Area */
+.map-area {
+    width: 100%;
+    height: 450px;
+    border: 2px solid var(--theme-color);
+    border-radius: 10px;
+}
+    /* Opening Hours */
+.list-group-item {
+    font-family: var(--font3);
+    font-size: 1.2em;
+}
+
+/*------------ERROR Page Styles-------------*/
+#error-section {
+    background-image: url('/media/images/chris-appano-mb_nVAy2a-8-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#error-section h1 {
+    font-family: var(--font1);
+    font-size: 5em;
+}
+#error-section p {
+    font-family: var(--font3);
+    font-size: 1.5em;
+}
+
+#error-section a {
+    font-family: var(--font1);
+    background-color: var(--theme-color);
+    color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+        transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#error-section a:hover {
+    transform: scale(1.05);
+    color: black;
+}
